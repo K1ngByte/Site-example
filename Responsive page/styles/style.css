@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #19223a;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 40px;
+    height: auto;
+}
+.logo h1{
+    color: white;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: #24aae3;
+    transition: .3s;
+}
+.btn{
+    background-color:#24aae3;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+
+}
+.btn:hover{
+    background-color: #08465e;
+    color: white;
+    
+}
+.meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.direita img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+.esquerda{
+    max-width: 100%;
+}
+.title h1{
+    font-size: 40px;
+    color: white;
+}
+.esquerda p{
+    color: white;
+    line-height: 1.8rem;
+}
+button{
+    color: white;
+    background-color: #24aae3;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+}
+button:hover{
+    background-color: #08465e;
+    transition: 0.3s;
+
+}
+aside {
+    display: none;
+}
+@media screen and (max-width: 700px){
+    ul{
+        display: none;
+    }
+    .links{
+        display: block;
+    }
+    .logo{
+        margin-right: 15rem;
+    }
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+    #Barra-menu{
+        background-color: #052b3a;
+        width: 0px;
+        height: 100vh;
+        transition: .3s;
+    }
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        color: white;
+    }
+    #Barra-menu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+    }
+    #Barra-menu ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    #Barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background-color: #24aae3;
+        color: black;
+    }
+    .cicon{
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+    .cicon span{
+        color: black;
+        font-size: 1rem;
+
+    }
+}
+@media screen and (max-width: 500px){
+    .title h1{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+    .logo{
+        margin-left: 1.5rem;
+        
+    }
+    .esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+    button{
+        margin-left: 1.5rem;
+    }
+}
+@media screen and (max-width:420px){
+    .logo{
+        margin-left: 5rem;
+    }
+    .esquerda h1 {
+        width: 300px;
+    }
+    .esquerda p{
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .logo{
+        margin-left: 5rem;
+    }
+    .esquerda p{
+        width: 250px;
+    }
+}
+@media screen and (max-width:375px){
+    .logo{
+        margin-left: 5rem;
+    }
+    .esquerda p{
+        width: 300px;
+    }
+}
